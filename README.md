@@ -1,5 +1,11 @@
 # spt — Spotify TUI (Python) 🎧🐍
 
+---
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT) [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/) [![Release](https://img.shields.io/github/v/release/naarvent/Spotify-From-Terminal?label=last%20release)](https://github.com/naarvent/Spotify-From-Terminal/releases/tag/v2.0) [![Issues](https://img.shields.io/github/issues/naarvent/Spotify-From-Terminal)](https://github.com/naarvent/Spotify-From-Terminal/issues) [![GitHub stars](https://img.shields.io/github/stars/naarvent/Spotify-From-Terminal?style=social)](https://github.com/naarvent/Spotify-From-Terminal/stargazers)
+
+
+---
 A terminal-based Spotify client built with Python, Spotipy and Textual. It provides a keyboard-driven TUI for searching, browsing and controlling Spotify playback, viewing synced lyrics when available, managing playlists and devices, and more.
 
 
